@@ -14,6 +14,8 @@ RUN mkdir -p /home/app
 
 COPY . /home/app
 
+RUN pip install -r requirements.txt
+
 EXPOSE 5000
 
 CMD ["python", /home/app/main.py]
