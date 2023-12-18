@@ -10,11 +10,11 @@
 
 FROM python:3.8.5-alpine3.11
 
-RUN mkdir -p /home/app
+RUN mkdir -p /app
 
-COPY . /home/app
+COPY . /app
 
-WORKDIR /home/app
+WORKDIR /app
 
 RUN pip install -r requirements.txt
 
